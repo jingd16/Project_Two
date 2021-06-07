@@ -38,20 +38,9 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template('index.html')
-#    return (
-#        f"Available Routes:<br/>"
-#         f"<br/>"
-#         f"<br/>"
-#         f"/country<br/>"
-#         f"<br/>"
-#         f"/hotel_reviews<br/>"
-#    )
 
 @app.route("/country", methods=["GET"])
 def country():
-    #"""List all avaliable API routes."""
-
-    #return (jsonify(country))
 
     session = Session(engine)
 
@@ -84,44 +73,138 @@ def country():
     
     return jsonify(country)
 
+
 #---Hotel Review API----
-@app.route("/hotel_reviews", methods=["GET"])
-def hotel_reviews():
+@app.route("/restaurants", methods=["GET"])
+def restaurants():
+    
+
+    session = Session(engine)
+
+    results3 = engine.execute("SELECT * FROM restaurants where avg_rating = 5").fetchall()
+
+    #create a list of dictionaries
+    restaurants=[]
+
+    for i in results3:
+        d = {"restaurant_name":i[0], 
+            "country":i[1],
+            "city":i[2],
+            "address":i[3],
+            "lat":i[4],
+            "lng":i[5],
+            "top_tags": i[6],
+            "price_range": i[7],
+            "meals": i[8],
+            "cuisines": i[9],
+            "special_diets": i[10],
+            "features": i[11],
+            "vegetarian_friendly": i[12],
+            "vegan_option": i[13],
+            "gluten_free": i[14],
+            "ave_rating": i[15],
+            "total_reviews_count": i[16],
+            "excellent": i[17],
+            "very_good": i[18],
+            "average": i[19],
+            "poor": i[20],
+            "terrible": i[21],
+            "food": i[22],
+            "service": i[23],
+            "value": i[24],
+            "atomosphere": i[25]
+
+            }
+        restaurants.append(d)
+    
+    return jsonify(restaurants)  
+
+#---Hotel Review_Cleaned API----
+@app.route("/hotel_reviews_cleaned", methods=["GET"])
+def hotel_reviews_cleaned():
     #"""List all avaliable API routes."""
 
     #return (jsonify(country))
 
     session = Session(engine)
 
-    results1 = engine.execute("SELECT * FROM hotel_reviews").fetchall()
+    results2 = engine.execute("SELECT * FROM hotel_reviews_cleaned").fetchall()
 
     #session.close()
 
     #create a list of dictionaries
-    hotel_reviews=[]
+    hotel_reviews_cleaned=[]
 
-    for i in results1:
-        b = {"ID":i[0], 
-            "Hotel_Name":i[1], 
-            "Additional_Number_of_Scoring":i[2],
-            "Review_Date":i[3],
-            "Average_Score":i[4],
-            "Reviewer_Nationality":i[5],
-            "Negative_Review":i[6],
-            "Review_Total_Negative_Word_Counts":i[7],
-            "Total_Number_of_Reviews":i[8],
-            "Positive_Review":i[9],
-            "Review_Total_Positive_Word_Counts":i[10],
-            "Total_Number_of_Reviews_Reviewer_Has_Given":i[11],
-            "Reviewer_Score":i[12],
-            "Tags":i[13],
-            "days_since_review":i[14],
-            "lat":i[15],
-            "lng":i[16],
+
+    for i in results2:
+        c = {"ID":i[0], 
+            "Hotel_Address":i[1],
+            "Average_Score":i[2],
+            "Negative_Review":i[4],
+            "Positive_Review":i[5],
+            "Reviewer_Score":i[6],
+            "Lat":i[8],
+            "Lng":i[9]
             }
-        hotel_reviews.append(b)
+        hotel_reviews_cleaned.append(c)
     
-    return jsonify(hotel_reviews)    
+    return jsonify(hotel_reviews_cleaned)    
+    
+
+#---Top 100 Cities  API----
+@app.route("/cities", methods=["GET"])
+def cities():
+
+    session = Session(engine)
+
+    results_c = engine.execute("SELECT * FROM cities").fetchall()
+
+    #session.close()
+
+    #create a list of dictionaries
+    cities=[]
+
+
+    for i in results_c:
+        e = {"city_url":i[0],
+            "city_name": i[1],
+            "city_country": i[2]
+            }
+        cities.append(e)
+    
+    return jsonify(cities) 
+
+
+#---Train Station API----
+@app.route("/trains", methods=["GET"])
+def trains():
+
+    session = Session(engine)
+
+    results_t = engine.execute("SELECT * FROM main_trains").fetchall()
+
+    #session.close()
+
+    #create a list of dictionaries
+    trains=[]
+
+    for i in results_t:
+        f = {"id":i[0],
+            "name": i[1],
+            "name_norm": i[2],
+            "uic": i[3],
+            "lat": i[4],
+            "lng": i[5],
+            "parent_station_id": i[6],
+            "country": i[7],
+            "time_zone": i[8],
+            "is_city": i[9],
+            "is_main_station:": i[10],
+            "is_airport": i[11]
+            }
+        trains.append(f)
+    
+    return jsonify(trains) 
 
 if __name__=='__main__':
     app.run(debug=True)

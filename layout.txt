@@ -1,0 +1,31 @@
+
+====Home page====
+Nav Bar:
+Home
+Country Data (D3 plots, bar chart....Josh)
+Country Comparison (James)
+Plan your stay (Will)
+
+HeatMap/Map display top 100 cities
+
+
+===== Country page ====
+Josh:
+Comprison chart for 31 countries (Based on Safety)
+
+
+===== Country comparison=== 
+James: 
+All countries - bar chart (all country)
+Radar charts - individual countries
+Drop down/barchart click?
+
+===== Plan your stay ======
+Will:
+Map for stations, hotels, resturants
+
+
+
+
+
+
