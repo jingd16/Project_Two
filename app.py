@@ -17,7 +17,7 @@ from flask import Flask, render_template
 ##############################
 # Database Setup
 ##############################
-engine = create_engine("postgres://qrzencvolteygr:dd6be5a3860dbbd0736b9b3ca2ebfcb0074849a16041ddc135d276dbfcc8956e@ec2-54-220-35-19.eu-west-1.compute.amazonaws.com:5432/ddmavhvjd8udo8")
+engine = create_engine("postgresql://qrzencvolteygr:dd6be5a3860dbbd0736b9b3ca2ebfcb0074849a16041ddc135d276dbfcc8956e@ec2-54-220-35-19.eu-west-1.compute.amazonaws.com:5432/ddmavhvjd8udo8")
 Base = automap_base()
 
 Base.prepare(engine, reflect=True)
