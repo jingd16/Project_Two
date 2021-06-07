@@ -87,34 +87,34 @@ def restaurants():
     restaurants=[]
 
     for i in results3:
-        d = {"restaurant_name":i[0], 
-            "country":i[1],
-            "city":i[2],
-            "address":i[3],
-            "lat":i[4],
-            "lng":i[5],
-            "top_tags": i[6],
-            "price_range": i[7],
-            "meals": i[8],
-            "cuisines": i[9],
-            "special_diets": i[10],
-            "features": i[11],
-            "vegetarian_friendly": i[12],
-            "vegan_option": i[13],
-            "gluten_free": i[14],
-            "ave_rating": i[15],
-            "total_reviews_count": i[16],
-            "excellent": i[17],
-            "very_good": i[18],
-            "average": i[19],
-            "poor": i[20],
-            "terrible": i[21],
-            "food": i[22],
-            "service": i[23],
-            "value": i[24],
-            "atomosphere": i[25]
-
-            }
+        d = {
+            "restaurant_name": i[1],
+            "country": i[2],
+            "city": i[3],
+            "address": i[4],
+            "lat": i[5],
+            "lng": i[6],
+            "top_tags": i[7],
+            "price_range": i[8],
+            "meals": i[9],
+            "cuisines": i[10],
+            "special_diets": i[11],
+            "features": i[12],
+            "vegetarian_friendly": i[13],
+            "vegan_option": i[14],
+            "gluten_free": i[15],
+            "ave_rating": i[16],
+            "total_reviews_count": i[17],
+            "excellent": i[18],
+            "very_good": i[19],
+            "average": i[20],
+            "poor": i[21],
+            "terrible": i[22],
+            "food": i[23],
+            "service": i[24],
+            "value": i[25],
+            "atomosphere": i[26]
+            }     
         restaurants.append(d)
     
     return jsonify(restaurants)  
