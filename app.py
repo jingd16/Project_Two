@@ -166,9 +166,12 @@ def cities():
 
 
     for i in results_c:
-        e = {"city_url":i[0],
-            "city_name": i[1],
-            "city_country": i[2]
+        e = {"id": i[0],
+            "city_url":i[1],
+            "city_name": i[2],
+            "city_country": i[3],
+            "lat": i[4],
+            "lng": i[5]
             }
         cities.append(e)
     
