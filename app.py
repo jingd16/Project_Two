@@ -39,6 +39,12 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+# ============================
+@app.route("/statistic")
+def statistic():
+    return render_template('statistic.html')
+# ============================
+
 @app.route("/country", methods=["GET"])
 def country():
 
