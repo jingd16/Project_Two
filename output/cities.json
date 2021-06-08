@@ -1,0 +1,714 @@
+[
+  {
+    "city_country": "Croatia", 
+    "city_name": "Plitvice lakes", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/plitvice-lakes-national-park-croatia-shutterstock_452413606.jpg", 
+    "id": "0", 
+    "lat": 44.8654, 
+    "lng": 15.582
+  }, 
+  {
+    "city_country": "Germany", 
+    "city_name": "Berlin", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/east-side-gallery-berlin-germany-shutterstock_221627185.jpg", 
+    "id": "1", 
+    "lat": 52.5167, 
+    "lng": 13.3833
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Positano", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/positano-amalfi-coast-justine-kibler.jpg", 
+    "id": "2", 
+    "lat": 40.6281, 
+    "lng": 14.485
+  }, 
+  {
+    "city_country": "United kingdom", 
+    "city_name": "Stratford-upon-avon", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/stratford-upon-avon-united-kingdom-shutterstock_509171716.jpg", 
+    "id": "3", 
+    "lat": 52.1928, 
+    "lng": -1.7064
+  }, 
+  {
+    "city_country": "Austria", 
+    "city_name": "Vienna", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/horse-hofburg-vienna-austria-shutterstock_334989290.jpg", 
+    "id": "4", 
+    "lat": 48.2083, 
+    "lng": 16.3731
+  }, 
+  {
+    "city_country": "Austria", 
+    "city_name": "Salzburg", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/salzburg-castle-austria-shutterstock_557948761.jpg", 
+    "id": "5", 
+    "lat": 47.7972, 
+    "lng": 13.0477
+  }, 
+  {
+    "city_country": "Austria", 
+    "city_name": "Innsbruck", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/innsbruck-austria-shutterstock_567050887.jpg", 
+    "id": "6", 
+    "lat": 47.2683, 
+    "lng": 11.3933
+  }, 
+  {
+    "city_country": "Austria", 
+    "city_name": "Hallstatt", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/hallstatt-austria-shutterstock_583691665.jpg", 
+    "id": "7", 
+    "lat": 47.5622, 
+    "lng": 13.6493
+  }, 
+  {
+    "city_country": "Belgium", 
+    "city_name": "Brussels", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/brussels-belgium-shutterstock_602490032.jpg", 
+    "id": "8", 
+    "lat": 50.8467, 
+    "lng": 4.3517
+  }, 
+  {
+    "city_country": "Belgium", 
+    "city_name": "Antwerp", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/antwerp-belgium-shutterstock_469803014.jpg", 
+    "id": "9", 
+    "lat": 51.2211, 
+    "lng": 4.3997
+  }, 
+  {
+    "city_country": "Bosnia", 
+    "city_name": "Mostar", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/mostar-bosnia-shutterstock_291941039.jpg", 
+    "id": "10", 
+    "lat": 43.3438, 
+    "lng": 17.8078
+  }, 
+  {
+    "city_country": "Bulgaria", 
+    "city_name": "Veliko tarnovo", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/veliko-tarnovo-bulgaria-shutterstock_455014963.jpg", 
+    "id": "11", 
+    "lat": 43.0822, 
+    "lng": 25.6317
+  }, 
+  {
+    "city_country": "Croatia", 
+    "city_name": "Dubrovnik", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/aerial-view-dubrovnik-croatia-shutterstock_89060818.jpg", 
+    "id": "12", 
+    "lat": 42.6403, 
+    "lng": 18.1083
+  }, 
+  {
+    "city_country": "Croatia", 
+    "city_name": "Rovinj", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/rovinj-croatia-shutterstock_345716342.jpg", 
+    "id": "13", 
+    "lat": 45.0833, 
+    "lng": 13.6333
+  }, 
+  {
+    "city_country": "Croatia", 
+    "city_name": "Split", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/split-croatia-shutterstock_378477469.jpg", 
+    "id": "14", 
+    "lat": 43.51, 
+    "lng": 16.45
+  }, 
+  {
+    "city_country": "Croatia", 
+    "city_name": "Vis", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/vis-croatia-shutterstock_354648251.jpg", 
+    "id": "15", 
+    "lat": 43.0602, 
+    "lng": 16.1829
+  }, 
+  {
+    "city_country": "Cyprus", 
+    "city_name": "Larnaca", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/larnaca-cyprus-shutterstock_590354198.jpg", 
+    "id": "16", 
+    "lat": 34.9233, 
+    "lng": 33.6305
+  }, 
+  {
+    "city_country": "Czech republic", 
+    "city_name": "Cesky krumlov", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/cesky-krumlov-czech-republic-shutterstock_217050151.jpg", 
+    "id": "17", 
+    "lat": 48.8127, 
+    "lng": 14.3175
+  }, 
+  {
+    "city_country": "Czech republic", 
+    "city_name": "Pilsen", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/pilsen-czech-republic-savviscouts.jpg", 
+    "id": "18", 
+    "lat": 49.7384, 
+    "lng": 13.3736
+  }, 
+  {
+    "city_country": "Czech republic", 
+    "city_name": "Liberec", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/liberec-czech-republic-shutterstock_308908910.jpg", 
+    "id": "19", 
+    "lat": 50.7663, 
+    "lng": 15.0543
+  }, 
+  {
+    "city_country": "Estonia", 
+    "city_name": "Tallinn", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/tallinn-estonia-shutterstock_532896754.jpg", 
+    "id": "20", 
+    "lat": 59.4372, 
+    "lng": 24.745
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Bordeaux", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/bordeaux-france-shutterstock_674603446.jpg", 
+    "id": "21", 
+    "lat": 44.84, 
+    "lng": -0.58
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Paris", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/paris-france-shutterstock_112137761.jpg", 
+    "id": "22", 
+    "lat": 48.8566, 
+    "lng": 2.3522
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Carcassonne", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/carcassonne-france-shutterstock_168186269.jpg", 
+    "id": "23", 
+    "lat": 43.21, 
+    "lng": 2.35
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Annecy", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/annecy-france-shutterstock_518330266.jpg", 
+    "id": "24", 
+    "lat": 45.916, 
+    "lng": 6.133
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Lille", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/lille-france-shutterstock_405343105.jpg", 
+    "id": "25", 
+    "lat": 50.6278, 
+    "lng": 3.0583
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Saint michel", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/saint-michel-france-shutterstock_400627612.jpg", 
+    "id": "26", 
+    "lat": 48.6361, 
+    "lng": -1.5115
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Provence", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/provence-france-lelongweekend.jpg", 
+    "id": "27", 
+    "lat": 44.0145, 
+    "lng": 6.2116
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Colmar", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/colmar-france-shutterstock_383000986.jpg", 
+    "id": "28", 
+    "lat": 48.0817, 
+    "lng": 7.3556
+  }, 
+  {
+    "city_country": "France", 
+    "city_name": "Kaysersberg", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/kaysersberg-france-shutterstock_666930112.jpg", 
+    "id": "29", 
+    "lat": 48.1389, 
+    "lng": 7.264
+  }, 
+  {
+    "city_country": "Georgia", 
+    "city_name": "Tbilisi", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/tbilisi-georgia-shutterstock_633064421.jpg", 
+    "id": "30", 
+    "lat": 41.7225, 
+    "lng": 44.7925
+  }, 
+  {
+    "city_country": "Germany", 
+    "city_name": "Hamburg", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/hamburg-germany-shutterstock_299810732.jpg", 
+    "id": "31", 
+    "lat": 53.55, 
+    "lng": 10.0
+  }, 
+  {
+    "city_country": "Germany", 
+    "city_name": "Munich", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/munich-germany-shutterstock_300147488.jpg", 
+    "id": "32", 
+    "lat": 48.1372, 
+    "lng": 11.5755
+  }, 
+  {
+    "city_country": "Germany", 
+    "city_name": "Boppard", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/boppard-germany-shutterstock_411865222.jpg", 
+    "id": "33", 
+    "lat": 50.2314, 
+    "lng": 7.5908
+  }, 
+  {
+    "city_country": "Greece", 
+    "city_name": "Milos", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/milos-greece-shutterstock_381434929.jpg", 
+    "id": "34", 
+    "lat": 36.6914, 
+    "lng": 24.3936
+  }, 
+  {
+    "city_country": "Greece", 
+    "city_name": "Crete", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/crete-greece-shutterstock_607676921.jpg", 
+    "id": "35", 
+    "lat": 35.2401, 
+    "lng": 24.8093
+  }, 
+  {
+    "city_country": "Greece", 
+    "city_name": "Santorini", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/santorini-greece-shutterstock_562590757.jpg", 
+    "id": "36", 
+    "lat": 36.3932, 
+    "lng": 25.4615
+  }, 
+  {
+    "city_country": "Iceland", 
+    "city_name": "Snaefellsnes peninsula", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/snaefellsnes-peninsula-iceland-shutterstock_359851631.jpg", 
+    "id": "37", 
+    "lat": 64.8443, 
+    "lng": -22.6533
+  }, 
+  {
+    "city_country": "Iceland", 
+    "city_name": "Thingvellir", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/thingvellir-national-park-iceland-shutterstock_220943389.jpg", 
+    "id": "38", 
+    "lat": 64.2559, 
+    "lng": -21.1295
+  }, 
+  {
+    "city_country": "Iceland", 
+    "city_name": "Myvatn lake", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/myvatn-lake-horses-iceland-shutterstock_277594562.jpg", 
+    "id": "39", 
+    "lat": 65.6039, 
+    "lng": -16.9961
+  }, 
+  {
+    "city_country": "Ireland", 
+    "city_name": "Giants causeway", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/giants-causeway-ireland-shutterstock_583870756.jpg", 
+    "id": "40", 
+    "lat": 55.240807, 
+    "lng": -6.511555
+  }, 
+  {
+    "city_country": "Ireland", 
+    "city_name": "Dublin", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/temple-bar-dublin-ireland-shutterstock_216667309.jpg", 
+    "id": "41", 
+    "lat": 53.3425, 
+    "lng": -6.2658
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Sardinia", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/sardinia-italy-shutterstock_697395712.jpg", 
+    "id": "42", 
+    "lat": 40.1209, 
+    "lng": 9.0129
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Genoa", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/genoa-italy-shutterstock_526782772.jpg", 
+    "id": "43", 
+    "lat": 44.4072, 
+    "lng": 8.934
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Rome", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/colosseum-rome-italy-shutterstock_433413835.jpg", 
+    "id": "44", 
+    "lat": 41.8931, 
+    "lng": 12.4828
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Florence", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/sunset-florence-skyline-italy-shutterstock_220854265.jpg", 
+    "id": "45", 
+    "lat": 43.7714, 
+    "lng": 11.2542
+  }, 
+  {
+    "city_country": "Marino", 
+    "city_name": "San", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/san-marino-shutterstock_167365811.jpg", 
+    "id": "46", 
+    "lat": 43.9424, 
+    "lng": 12.4578
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Lucca", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/lucca-italy-shutterstock_324983093.jpg", 
+    "id": "47", 
+    "lat": 43.8429, 
+    "lng": 10.5027
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Bologna", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/bologna-italy-shutterstock_303460049.jpg", 
+    "id": "48", 
+    "lat": 44.4939, 
+    "lng": 11.3428
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Padua", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/padua-italy-shutterstock_682776757.jpg", 
+    "id": "49", 
+    "lat": 45.4064, 
+    "lng": 11.8768
+  }, 
+  {
+    "city_country": "Italy", 
+    "city_name": "Lake como", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/lake-como-italy-shutterstock_145950050.jpg", 
+    "id": "50", 
+    "lat": 46.016, 
+    "lng": 9.2572
+  }, 
+  {
+    "city_country": "Latvia", 
+    "city_name": "Sigulda", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/sigulda-latvia-shutterstock_613388522.jpg", 
+    "id": "51", 
+    "lat": 57.1539, 
+    "lng": 24.8544
+  }, 
+  {
+    "city_country": "Luxembourg", 
+    "city_name": "Luxembourg city", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/luxembourg-shutterstock_562734511.jpg", 
+    "id": "52", 
+    "lat": 49.8153, 
+    "lng": 6.1296
+  }, 
+  {
+    "city_country": "The netherlands52.0705", 
+    "city_name": "The hague", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/the-hague-netherlands-shutterstock_169151456.jpg", 
+    "id": "53", 
+    "lat": null, 
+    "lng": 4.3007
+  }, 
+  {
+    "city_country": "The netherlands", 
+    "city_name": "Amsterdam", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/amsterdam-netherlands-shutterstock_188438480.jpg", 
+    "id": "54", 
+    "lat": 52.3676, 
+    "lng": 4.9041
+  }, 
+  {
+    "city_country": "The netherlands", 
+    "city_name": "Utrecht", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/utrecht-netherlands-shutterstock_298197569.jpg", 
+    "id": "55", 
+    "lat": 52.0907, 
+    "lng": 5.1214
+  }, 
+  {
+    "city_country": "Norway", 
+    "city_name": "Reine", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/reine-norway-shutterstock_260276993.jpg", 
+    "id": "56", 
+    "lat": 67.9324, 
+    "lng": 13.0887
+  }, 
+  {
+    "city_country": "Malta", 
+    "city_name": "Comino", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/comino-malta-shutterstock_639210100.jpg", 
+    "id": "57", 
+    "lat": 36.0101, 
+    "lng": 14.3356
+  }, 
+  {
+    "city_country": "Monaco", 
+    "city_name": "Monte carlo", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/monte-carlo-monaco-shutterstock_343910501.jpg", 
+    "id": "58", 
+    "lat": 43.7401, 
+    "lng": 7.4266
+  }, 
+  {
+    "city_country": "Poland", 
+    "city_name": "Zakopane", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/zakopane-poland-shutterstock_468464621.jpg", 
+    "id": "59", 
+    "lat": 49.2994, 
+    "lng": 19.9519
+  }, 
+  {
+    "city_country": "Poland", 
+    "city_name": "Bieszczady", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/bieszczady-poland-bornglobals.jpg", 
+    "id": "60", 
+    "lat": 49.3098, 
+    "lng": 22.6
+  }, 
+  {
+    "city_country": "Poland", 
+    "city_name": "Krakow", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/krakow-poland-shutterstock_310614122.jpg", 
+    "id": "61", 
+    "lat": 50.0647, 
+    "lng": 19.945
+  }, 
+  {
+    "city_country": "Portugal", 
+    "city_name": "Algarve", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/algarve-portugal-shutterstock_648798847.jpg", 
+    "id": "62", 
+    "lat": 37.018, 
+    "lng": -7.9308
+  }, 
+  {
+    "city_country": "Portugal", 
+    "city_name": "Lisbon", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/lisbon-portugal-shutterstock_86309014.jpg", 
+    "id": "63", 
+    "lat": 38.7452, 
+    "lng": -9.1604
+  }, 
+  {
+    "city_country": "Portugal", 
+    "city_name": "Douro valley", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/douro-valley-portugal-shutterstock_430389871.jpg", 
+    "id": "64", 
+    "lat": 41.101, 
+    "lng": -7.7927
+  }, 
+  {
+    "city_country": "Portugal", 
+    "city_name": "Porto", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/porto-portugal-shutterstock_566269783.jpg", 
+    "id": "65", 
+    "lat": 41.1495, 
+    "lng": -8.6108
+  }, 
+  {
+    "city_country": "Romania", 
+    "city_name": "Brasov", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/brasov-romania-shutterstock_494960083.jpg", 
+    "id": "66", 
+    "lat": 45.6427, 
+    "lng": 25.5887
+  }, 
+  {
+    "city_country": "Romania", 
+    "city_name": "Bucharest", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/bucharest-romania-shutterstock_390675580.jpg", 
+    "id": "67", 
+    "lat": 44.4, 
+    "lng": 26.0833
+  }, 
+  {
+    "city_country": "Russia", 
+    "city_name": "Moscow", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/moscow-russia-shutterstock_307926614.jpg", 
+    "id": "68", 
+    "lat": 55.7558, 
+    "lng": 37.6178
+  }, 
+  {
+    "city_country": "Russia", 
+    "city_name": "Saint petersburg", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/saint-petersburg-russia-shutterstock_357158000.jpg", 
+    "id": "69", 
+    "lat": 59.95, 
+    "lng": 30.3167
+  }, 
+  {
+    "city_country": "Serbia", 
+    "city_name": "Belgrade", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/belgrade-serbia-shutterstock_376421113.jpg", 
+    "id": "70", 
+    "lat": 44.8167, 
+    "lng": 20.4667
+  }, 
+  {
+    "city_country": "Slovakia", 
+    "city_name": "Bratislava", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/bratislava-slovakia-shutterstock_566602672.jpg", 
+    "id": "71", 
+    "lat": 48.1447, 
+    "lng": 17.1128
+  }, 
+  {
+    "city_country": "Slovenia", 
+    "city_name": "Ljubljana", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/ljubljana-slovenia-shutterstock_334560479.jpg", 
+    "id": "72", 
+    "lat": 46.05, 
+    "lng": 14.5167
+  }, 
+  {
+    "city_country": "Spain", 
+    "city_name": "Barcelona", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/park-guell-barcelona-spain-shutterstock_261614468.jpg", 
+    "id": "73", 
+    "lat": 41.3825, 
+    "lng": 2.1769
+  }, 
+  {
+    "city_country": "Spain", 
+    "city_name": "Valencia", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/valencia-spain-shutterstock_404636176.jpg", 
+    "id": "74", 
+    "lat": 39.4667, 
+    "lng": -0.375
+  }, 
+  {
+    "city_country": "Spain", 
+    "city_name": "San sebastian", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/san-sebastian-spain-shutterstock_566915296.jpg", 
+    "id": "75", 
+    "lat": 43.3183, 
+    "lng": -1.9812
+  }, 
+  {
+    "city_country": "Spain", 
+    "city_name": "Oviedo", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/oviedo-spain-shutterstock_473245579.jpg", 
+    "id": "76", 
+    "lat": 43.3634, 
+    "lng": -5.8423
+  }, 
+  {
+    "city_country": "Spain", 
+    "city_name": "Majorca", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/majorca-spain-shutterstock_532966135.jpg", 
+    "id": "77", 
+    "lat": 39.6953, 
+    "lng": 3.0176
+  }, 
+  {
+    "city_country": "Sweden", 
+    "city_name": "Stockholm", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/stockholm-sweden-shutterstock_378941314.jpg", 
+    "id": "78", 
+    "lat": 59.3294, 
+    "lng": 18.0686
+  }, 
+  {
+    "city_country": "Switzerland", 
+    "city_name": "Bern", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/bern-switzerland-shutterstock_610557665.jpg", 
+    "id": "79", 
+    "lat": 46.948, 
+    "lng": 7.4474
+  }, 
+  {
+    "city_country": "Switzerland", 
+    "city_name": "Zurich", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/zurich-switzerland-shutterstock_314150237.jpg", 
+    "id": "80", 
+    "lat": 47.3769, 
+    "lng": 8.5417
+  }, 
+  {
+    "city_country": "Switzerland", 
+    "city_name": "Nendaz", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/nendaz-switzerland-shutterstock_541361293.jpg", 
+    "id": "81", 
+    "lat": 46.1834, 
+    "lng": 7.2942
+  }, 
+  {
+    "city_country": "Switzerland", 
+    "city_name": "Lauterbrunnen", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/lauterbrunnen-switzerland-shutterstock_400627330.jpg", 
+    "id": "82", 
+    "lat": 46.5935, 
+    "lng": 7.9091
+  }, 
+  {
+    "city_country": "Switzerland", 
+    "city_name": "Lucerne", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/lucerne-switzerland-shutterstock_377522860.jpg", 
+    "id": "83", 
+    "lat": 47.0523, 
+    "lng": 8.3059
+  }, 
+  {
+    "city_country": "United kingdom", 
+    "city_name": "London", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/london-united-kingdom-shutterstock_193444583.jpg", 
+    "id": "84", 
+    "lat": 51.5072, 
+    "lng": -0.1275
+  }, 
+  {
+    "city_country": "United kingdom", 
+    "city_name": "Cotswolds", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/cotswolds-united-kingdom-shutterstock_201193697.jpg", 
+    "id": "85", 
+    "lat": 51.795, 
+    "lng": -1.8839
+  }, 
+  {
+    "city_country": "United kingdom", 
+    "city_name": "Liverpool", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/liverpool-germany-shutterstock_552695065.jpg", 
+    "id": "86", 
+    "lat": 53.4084, 
+    "lng": -2.9916
+  }, 
+  {
+    "city_country": "Scotland", 
+    "city_name": "Edinburgh", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/calton-hill-edinburgh-scotland-shutterstock_297674459.jpg", 
+    "id": "87", 
+    "lat": 55.9533, 
+    "lng": -3.1883
+  }, 
+  {
+    "city_country": "Ukraine", 
+    "city_name": "Chernobyl", 
+    "city_url": "https://www.roadaffair.com/wp-content/uploads/2017/09/chernobyl-ukraine-shutterstock_546041704.jpg", 
+    "id": "88", 
+    "lat": 51.2763, 
+    "lng": 30.2219
+  }
+]
