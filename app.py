@@ -35,15 +35,29 @@ app = Flask(__name__)
 # Flask Routes
 #########################
 
+# ===================Web pages==============
 @app.route("/")
 def index():
     return render_template('index.html')
 
-# ============================
 @app.route("/statistic")
 def statistic():
     return render_template('statistic.html')
-# ============================
+
+@app.route("/comparisonbar")
+def comparisonbar():
+    return render_template('comparisonbar.html')
+
+@app.route("/comparison")
+def comparison():
+    return render_template('comparison.html')
+
+@app.route("/map")
+def map():
+    return render_template('map.html')
+
+
+# ==================APIs====================
 
 @app.route("/country", methods=["GET"])
 def country():
