@@ -48,22 +48,26 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: "pk.eyJ1IjoiamluZ2QxNiIsImEiOiJja3Azc2dzbmEwMGl6Mm9yN2Jya2JnMnM1In0.IhXkxlhkjKEqwuhE-EI5cw"
 }).addTo(myMap);
 
+
 d3.json(cities_data, cities_data=> {
     console.log("cities")
     console.log(cities_data);
-
+    
+    var cityIcon = L.icon({
+    iconUrl: "static/images/city5.png",
+    iconSize: [50,50]
+    });
+   
     for (var i=0; i<cities_data.length; i++) {
-        
         //var c=generateRandomColor();
         if (cities_data[i].lat) {
             var location = [cities_data[i].lat, cities_data[i].lng];
-            var popup_content = `<h1><strong>${cities_data[i].city_name}<strong></h1>
+            var popup_content = `<h3><strong>${cities_data[i].city_name}<strong></h3>
                                 <hr>
-                                <h3>${cities_data[i].city_country}</h3>
+                                <h4>${cities_data[i].city_country}</h4>
                                 <hr>
-                                <img src=${cities_data[i].city_url} alt="${cities_data[i].city_name} width="150" height="150"></img>`
-
-            L.marker(location)
+                                <img src=${cities_data[i].city_url} alt="${cities_data[i].city_name} width="300" height="240"></img>`
+            L.marker(location, {icon: cityIcon, draggable: false})
             .bindPopup(popup_content, {maxWidth: "auto"})
             .addTo(myMap);
         }
