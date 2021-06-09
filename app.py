@@ -56,6 +56,9 @@ def comparison():
 def map():
     return render_template('map.html')
 
+@app.route("/aboutus")
+def aboutus():
+    return render_template('aboutus.html')
 
 # ==================APIs====================
 
