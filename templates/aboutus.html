@@ -79,15 +79,20 @@
 
           <p>We chose to couch those visualisations in the context of planning a holiday, this allowed the user to ‘choose their own adventure’ and encouraged them to find ways to interpret the data that were meaningful to them.</p>
           <p>The ETL process was quite interesting, most of the data was gathered from Kaggle with the images scraped from various websites. This task proved tricker than expected as many of the websites did not seem to have a logical structure and finding the image locations was very difficult.</p>
-          <p>We used Python for our data transformation process this primarily involved basic data cleaning. Though some data had to be significantly transformed to be fit for purpose. One example of this is our Safety Chart where the data had to be interpreted in such a way that all high scores were considered the best score. A high crime rate and a high trust in police do not mean the same thing. It was determined that the crime rate would be interpreted as ‘Safety from Crime’ to use the inverse number of the data (if crime rate was 14% safety from crime was 86% and so on).</p>
-          <p>With the data transformed a Flask server was used to load the data into an SQL Postgres server on Heroku.</p>
-          <p>Then we finally got to tell the story! D3.js was used to plot all the charts and we ensured that we used some visualisations we had never come across before (like the radar charts) to learn something new. Mapbox and Leaflet were utilised to generate our interactive maps and all the maps generate from the data on the server so they can be updated.</p>
-          <p>These visualisations were then put together on a website using HTML and CSS(bootstrap) to complete this final product.</p>
+          <p>We used <strong>Python</strong> for our data transformation process this primarily involved basic data cleaning. Though some data had to be significantly transformed to be fit for purpose. One example of this is our Safety Chart where the data had to be interpreted in such a way that all high scores were considered the best score. A high crime rate and a high trust in police do not mean the same thing. It was determined that the crime rate would be interpreted as ‘Safety from Crime’ to use the inverse number of the data (if crime rate was 14% safety from crime was 86% and so on).</p>
+          <p>With the data transformed a <strong>Flask</strong> server was used to load the data into an <strong>SQL Postgres</strong> server on Heroku.</p>
+          <p>Then we finally got to tell the story! <strong>D3.js</strong> was used to plot all the charts and we ensured that we used some visualisations we had never come across before (like the radar charts) to learn something new. <strong>Mapbox</strong> and <strong>Leaflet</strong> were utilised to generate our interactive maps and all the maps generate from the data on the server so they can be updated.</p>
+          <p>These visualisations were then put together on a website using <strong>HTML</strong> and <strong>CSS(bootstrap)</strong> to complete this final product.</p>
           <p>This has been an excellent team and we are very proud of what we have put together, we hope you enjoy it too!</p>
 
-          <h5>Data Source:</h5>
-
-
+          <p><strong>Data Source:</strong></p>
+          <p><a href="https://www.kaggle.com/headsortails/train-stations-in-europe">Train Station</a></p>
+          <p><a href="https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe">Hotel Reviews</a></p>
+          <p><a href="https://www.kaggle.com/stefanoleone992/tripadvisor-european-restaurants">Restaurant Reviews</a></p>
+          <p><a href="https://www.kaggle.com/roshansharma/europe-datasets">Country Statistics</a></p>
+          <p><a href="https://simplemaps.com/data/world-cities">World Cities</a></p>
+          
+          
 
     </div>
   </div>
