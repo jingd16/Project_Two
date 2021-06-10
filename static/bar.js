@@ -65,31 +65,15 @@ d3.json(url).then(function(country) {
     .attr("y", d => yLinearScale(d.prct_leisure_satis_high))
     .attr("width", xBandScale.bandwidth())
     .attr("height", d => chartHeight - yLinearScale(d.prct_leisure_satis_high))
-
-    // d3.csv("Radar_Country.csv").then(function(Radar_Country) {
-
-      // Step 1: Parse Data/Cast as numbers
-      // ==============================
-      // Radar_Country.forEach(function(data) {
-        
-// country,prct_rpt_crime,prct_leisure_satis_high,prct_life_satis_high,prct_rpt_pollution,prct_yng_adt_pop,police_trust_rating,avg_temp,avg_precipitation
-
-
-        // data.prct_rpt_crime = +data.prct_rpt_crime;
-        // data.prct_leisure_satis_high = +data.prct_leisure_satis_high;
-  
-        // Radar_Country.forEach(function(data) {
-        //   data.prct_rpt_crime = +data.prct_rpt_crime;
-        //   data.prct_leisure_satis_high = +data.prct_leisure_satis_high;
-        // });
-  
      
     // Step 6: Initialize tool tip
     // ==============================
-    var toolTip = d3.select("body")
-     // .select("#James1")
-      .append("div")
+    var toolTip = d3.select("#James")
+     .append("div")
+      // .style("position", "absolute")
+      // .style("visibility", "visible")
       .classed("tooltip123", true);
+      // .attr("class", "tooltip123");
     // Step 7: Create tooltip in the chart
     // ==============================
     circlesGroup.on("click", function(d) {
@@ -104,28 +88,11 @@ d3.json(url).then(function(country) {
             <li>Police trust in ${(d.country)} is ${(d.police_trust_rating)} Percent </li>
             <li>Average Temperature in ${(d.country)} is ${(d.avg_temp)} degrees fahrenhit </li>
             <li>Average Rainfall in ${(d.country)} is ${(d.avg_precipitation)} inches </li></ul>`) 
-          .style("left", d3.event.pageX + "1000")
-          .style("top", d3.event.pageY + "1600");
+          // .style("right", d3.event.pageX + "1000")
+          // .style("top", d3.event.pageY + "1600")
+          .style("position", "absolute")
+          .style("visibility", "visible");
     })
-
-    // d.prct_rpt_crime = +d.prct_rpt_crime;
-    // d.prct_leisure_satis_high = +d.prct_leisure_satis_high;
-    // d.prct_life_satis_high = +d.prct_life_satis_high;
-    // d.prct_rpt_pollution = +d.prct_rpt_pollution;
-    // d.prct_yng_adt_pop = +d.prct_yng_adt_pop;
-    // d.police_trust_rating = +d.police_trust_rating;
-    // d.avg_temp = +d.avg_temp;
-    // d.avg_precipitation
-    // Step 8: Create event listeners to display and hide the tooltip
-    // ==============================
-    // .on("mouseout", function() {
-    //   toolTip.style("display", "none");
-    // });
-    // var line1 = d3.line()
-    // .x(d => xTimeScale(d.hair_length))
-    // .y(d => yLinearScale1(d.prct_leisure_satis_high));
-
-
 
   }).catch(function(error) {
     console.log(error);
