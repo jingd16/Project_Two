@@ -29,7 +29,7 @@
 <!-- <body>     style="background-color:#e8edf0;"> -->
 <body>
   <div class="container div_position">
-    <img src="static/long.jpg" width="100%" height="100%" alt="head-imge">
+    <img src="static/long.jpg" width="1300" height="300" alt="head-imge">
   </div>
 
 
@@ -43,21 +43,20 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/map">Plan Your Holiday</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/comparison">Country Comparison</a>
+            <a class="nav-link" href="map.html">Plan Your Holiday</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/statistic">Country Statistics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/aboutus">About Us</a>
+            <a class="nav-link" href="comparison.html">Country Comparison</a>
           </li>
-          
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -83,23 +82,20 @@
   <div class="container div_position">
     <div class="row">
           <br>
-          <h3>MAP MAP MAP HOTEL RESTAURANT TRAINS</h3>
-          <p>EXPLAIN</p>
-          <p>MAP</p>
-          <p>CONTENT</p>
-          <p>HERE!!</p>
-          <P>CONTENT</P>
-          <P>CONTENT</P>
-          <P>CONTENT</P>
+          <h3>Here comes the fun part...</h3>
+          <p>Now that you've worked out the metrics that matter to you, let's kick the analyst out of the driver's seat and let the dreamer take control.</p>
+            <p>The first thing to see is the cities - as you click on <img src="static/images/city3.png" alt="City"> you'll see the name of the city and country to allow you to navigate around. </p>
+            <p>In the top right corner of the map, you'll have the option to turn on Restaurants <img src="static/images/restaurant2.png" alt="Restaurant"> or Train Stations <img src="static/images/train4.png" alt="Train"> or Hotels <img src="static/images/hotel4.png" alt="Hotel">.  As you click on each Marker, you'll find useful information to help you dream away your dreary lockdown day.</p>
+            <p>Remember - this is a luxury holiday so only high quality restaurants and hotels are available.</p>
     </div>
   </div>
     
   <!-- <div class="container div_position"> -->
     <div class="container div_position" id="map">
+
     <!-- Cities Map Here from app.js -->
     </div>
   <!-- </div> -->
-
 
 <!-- Leaflet JavaScript -->
 <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
@@ -114,14 +110,36 @@ crossorigin=""></script>
   <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
   crossorigin=""></script>
+  <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+
+  <!-- Leaflet CSS ANNA -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.0/leaflet.awesome-markers.min.js"></script>
+  
+  <!--<script src="static/js/leaflet.extra-markers.min.js"></script>-->
+  <script type="text/css"  src="static/awesomemarkers.css"></script>
+
+  <!-- Marker Cluster CSS -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+    <!-- Marker Cluster JS -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.Default.css">
 
   <!-- D3 JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
-
+  
+    <!-- Icons -->
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/leaflet.extra-markers.min.css">
   
   <!-- =======================OUR JS FILES============================= -->
   
-  <!-- <script src="{{url_for('static',filename='app.js')}}"></script> -->
+  <script src="{{url_for('static',filename='map.js')}}"></script>
 
 </body>
 
