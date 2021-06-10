@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="style.css">
+<head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .radar-chart .area {
+      fill-opacity: 0.7;
+    }
+    .radar-chart.focus .area {
+      fill-opacity: 0.3;
+    }
+    .radar-chart.focus .area.focused {
+      fill-opacity: 0.9;
+    }
+    .area.germany, .germany .circle {
+      fill: #FFD700;
+      stroke: none;
+    }
+    .area.argentina, .argentina .circle {
+      fill: #ADD8E6;
+      stroke: none;
+    }
+  </style>
+
+
+  <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+  <script type="text/javascript" src="radar2.js"></script>
+
+
+  </head>
+  <body>
+    <h1>Western European Radar Graph</h1>
+    <p><strong></strong><strong></strong></p>
+
+    <textarea id="data" type = "hidden" cols="0" rows="0" style="margin: 0px; width: 0px; height: 0px;" >
+      Country ,Crime Reported Percentage ,Leisure Satisfaction,Life Satisfaction,Pollution,Population under 30,Police Trust Rating,Average Temperature,Average Rainfall
+      Austria,12.4,35.3,37.9,10.7,18.6775435197109,7.2,44.6,39.3
+      Belgium,13.4,21.5,20.9,13.2,18.4851460433477,6.1,48.8,33.1
+      Switzerland,10.9,25.8,38.5,8.9,18.4457868857281,7.4,42.5,46.7
+      Germany,14.1,24.2,25.0,23.2,17.105589842993,6.4,46.6,29.4
+      France,14.8,23.3,16.1,14.1,18.527500485112398,5.6,52.3,30.7
+      Ireland,9.9,29.1,30.6,4.6,20.6013349397843,6.9,49.4,40.8
+      Luxembourg,12.2,30.0,25.7,16.1,18.9406522456197,6.1,46.7,32.4
+      Netherlands,16.9,18.9,26.1,13.2,18.269979122586697,6.6,49.2,29.7
+      United Kingdom,16.8,29.0,27.8,9.0,19.942316013787398,6.4,48.8,29.7
+</textarea>
+<p type = "hidden">
+Width: <input type="number" name="w" id="w" type = "hidden" form-control" value="1000" min="200" max="2000" step="" required="required" title="" style="margin: 0px; width: 0px; height: 0px;">
+Height: <input type="number" name="h" id="h" type = "hidden" class="form-control" value="1000" min="200" max="2000" step="" required="required" title="" style="margin: 0px; width: 0px; height: 0px;">
+</p>
+<p>
+<button onclick='showRadar()' class="btn btn-default" style="width:200px;height:100px;">Compare Western European Countries, Salut!!!!</button>
+</p>
+<script type="text/javascript">
+
+country = []
+d3.json("country.json") , (function(country) {
+  console.log(country)
+
+  console.log(country.country)
+});
+
+// d3.csv("Radar_Country.csv").then(function(country) {
+// country.forEach(function(d) {
+//     d.gdp = +d.gdp;
+//     d.prct_rpt_crime = +d.prct_rpt_crime;
+//     d.prct_leisure_satis_high = +d.prct_leisure_satis_high;
+//     d.prct_life_satis_high = +d.prct_life_satis_high;
+//     d.prct_rpt_pollution = +d.prct_rpt_pollution;
+//     d.prct_yng_adt_pop = +d.prct_yng_adt_pop;
+//     d.police_trust_rating = +d.police_trust_rating;
+//     d.avg_temp = +d.avg_temp;
+//     d.avg_precipitation = +d.avg_precipitation;
+//   });
+//   });
+  function showRadar(){
+    var data = [];
+    var chart = RadarChart.chart();
+  
+  var c = document.getElementById("data").value,
+      w = document.getElementById("w").value,
+      h = document.getElementById("h").value,
+  csv = c.split("\n").map(function(i){return i.split(",")})
+
+  // csv = d3.csvParse("country")
+  // console.log(csv)
+  
+// v = d3.json("Radar_Country.json")
+// csv = d3.csvParse("Radar_Country.csv"); // [{foo: "1", bar: "2"}, columns: ["foo", "bar"]]
+// console.log(v)
+// csv = stringify(v)
+// var json = JSON.stringify(v);
+// csv = JSON.parse(json);
+// console.log(csv)
+
+// d3.csv("./Radar_Country.csv").then(function(tvData) {
+//   console.log(tvData);
+// }).catch(function(error) {
+//   console.log(error);
+// });
+
+  headers = []
+  csv.forEach(function(item, i){
+    if(i==0){
+      headers = item;
+    }else{
+      newSeries = {};
+      item.forEach( function(v, j){
+        if(j==0){
+          newSeries.className = v;
+          newSeries.axes = [];
+        }else{
+          newSeries.axes.push({"axis":[headers[j]], "value": parseFloat(v)});
+        }
+      });
+      data.push(newSeries);
+    }
+  })
+RadarChart.defaultConfig.radius = 3;
+RadarChart.defaultConfig.w = w;
+RadarChart.defaultConfig.h = h;
+RadarChart.draw("#chart-container", data);
+function animate(elem,time) {
+    if( !elem) return;
+    var to = elem.offsetTop;
+    var from = window.scrollY;
+    var start = new Date().getTime(),
+        timer = setInterval(function() {
+            var step = Math.min(1,(new Date().getTime()-start)/time);
+            window.scrollTo(0,(from+step*(to-from))+1);
+            if( step == 1){ clearInterval(timer);};
+        },25);
+        window.scrollTo(0,(from+1));
+    }
+
+var divVal = document.getElementById('chart-container');
+animate(divVal,600);
+}
+</script>
+
+
+<div id="chart-container"></div>
+<script type="text/javascript">
+    //RadarChart.defaultConfig.levelTick = true;
+  </script>
+
+</body>
+</html>
