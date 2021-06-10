@@ -163,6 +163,7 @@ def hotel_reviews_cleaned():
         c = {"ID":i[0], 
             "Hotel_Address":i[1],
             "Average_Score":i[2],
+            "Hotel_Name":i[3],
             "Negative_Review":i[4],
             "Positive_Review":i[5],
             "Reviewer_Score":i[6],
