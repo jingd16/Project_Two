@@ -60,6 +60,27 @@ def map():
 def aboutus():
     return render_template('aboutus.html')
 
+@app.route("/radareastern")
+def radareastern():
+    return render_template('radareastern.html')
+  
+
+@app.route("/mediterranean")
+def mediterranean():
+    return render_template('mediterranean.html')
+
+@app.route("/scandinavia")
+def scandinavia():
+    return render_template('scandinavia.html')
+
+@app.route("/westerneurope")
+def westerneurope():
+    return render_template('westerneurope.html')
+
+@app.route("/bar")
+def bar():
+    return render_template('bar.html')
+
 # ==================APIs====================
 
 @app.route("/country", methods=["GET"])

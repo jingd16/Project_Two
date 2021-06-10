@@ -1,0 +1,52 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: green;
+}
+.axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #551aaf;
+  text-anchor: middle;
+}
+prct_rpt_crime {
+  width: 960px;
+  margin: auto;
+  font-family: Arial;
+}
+#target {
+  margin: 0px 0;
+}
+.chart {
+  margin-bottom: 40px;
+}
+.star-title {
+  font-size: 14px;
+}
+.star-label {
+  font-size: 11px;
+}
+.star-origin {
+  fill: #333;
+}
+.star-axis {
+  stroke: #ccc;
+  stroke-width: 2px;
+  stroke-dasharray: 4 5;
+}
+.star-path {
+  stroke: #444;
+  stroke-width: 2px;
+  fill: #709CB1;
+  fill-opacity: 0.6;
+}
+
+#tooltip{margin-left: 150px;}
