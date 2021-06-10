@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 
+<!-- <link rel="stylesheet" href="style.css"> -->
+<!-- FLASK -- ****CHECK FOLDER STRUCTURE**** (static/style.css.....)> -->
+<link rel="stylesheet" href="{{url_for('static',filename = 'style.css')}}">
+<head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .radar-chart .area {
+      fill-opacity: 0.7;
+    }
+    .radar-chart.focus .area {
+      fill-opacity: 0.3;
+    }
+    .radar-chart.focus .area.focused {
+      fill-opacity: 0.9;
+    }
+    .area.germany, .germany .circle {
+      fill: #FFD700;
+      stroke: none;
+    }
+    .area.argentina, .argentina .circle {
+      fill: #ADD8E6;
+      stroke: none;
+    }
+  </style>
+
+
+  <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+  <!-- <script type="text/javascript" src="radar2.js"></script> -->
+
+
+  </head>
+  <body>
+
+    <div class="container div_position">
+      <img src="static/long.jpg" width="100%" height="100%" alt="head-imge">
+    </div>
+
+
+    <div class="container div_position">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/map">Plan Your Holiday</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/comparison">Country Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/statistic">Country Statistics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/aboutus">About Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </div>
+    
+    <!-- <p>This Data is  <strong>first row are the headers</strong> and the <strong>first column is the class names.</strong></p> -->
+    <div id="chart-container" class="container div_position">
+      <h3 style="padding: 20px;">Mediterranean Radar Graph</h3>
+      <p>The Radar Charts are a visual representation of comparable regions lifestyle data. The premise is simple, Pick a region, Click the button, Compare the data, choose a holiday country!</p>
+      <p>By visually representing the data as a radar chart it is possible to see how countries in specific regions stack up against each other. </p>
+    </div>
+
+    <div class="container div_position">
+      <textarea id="data" class="hidden" type = "hidden" cols="60" rows="32"style="margin: 0px; width: 0px; height: 0px;"  >
+        Country ,Crime Reported Percentage ,Leisure Satisfaction,Life Satisfaction,Pollution,Population under 30,Police Trust Rating,Average Temperature,Average Rainfall
+        Cyprus,9.8,24.0,14.2,9.2,23.3226282027637,4.7,66.1,15.4
+        Greece,11.8,11.6,12.8,19.6,17.604416155416,5.0,62.5,25.3
+        Spain,10.3,21.2,18.4,10.1,16.6743314398887,5.4,60.0,21.7
+        Italy,14.7,13.8,14.2,15.1,15.4749732744415,5.8,56.3,30.4
+        Malta,10.4,23.6,21.9,30.2,20.590659077406606,6.3,65.7,22.0
+        Portugal,7.8,23.9,13.8,13.1,17.0740447661458,5.4,60.4,32.5
+        Turkey,10.7,12.2,11.1,24.5,18.7139599901475,6.5,54.2,25.7
+      </textarea>
+      <p class="hidden" type = "hidden">
+        Width: <input type="number" name="w" id="w" type = "hidden" form-control value="1000" min="200" max="2000" step="" required="required" title=""style="margin: 0px; width: 0px; height: 0px;" >
+        Height: <input type="number" name="h" id="h" type = "hidden" class="form-control" value="1000" min="200" max="2000" step="" required="required" title=""style="margin: 0px; width: 0px; height: 0px;" >
+      </p>
+      <p>
+      <button onclick='showRadar()' class="button" style="width:200px;height:150px;">Compare Mediterranean Countries,  Ciao Bella!!!!!!</button>
+      </p>
+    </div>
+
+<script type="text/javascript">
+
+country = []
+d3.json("/country") , (function(country) {
+  console.log(country)
+
+  console.log(country.country)
+});
+
+  function showRadar(){
+    var data = [];
+    var chart = RadarChart.chart();
+  
+  var c = document.getElementById("data").value,
+      w = document.getElementById("w").value,
+      h = document.getElementById("h").value,
+  csv = c.split("\n").map(function(i){return i.split(",")})
+
+  headers = []
+  csv.forEach(function(item, i){
+    if(i==0){
+      headers = item;
+    }else{
+      newSeries = {};
+      item.forEach( function(v, j){
+        if(j==0){
+          newSeries.className = v;
+          newSeries.axes = [];
+        }else{
+          newSeries.axes.push({"axis":[headers[j]], "value": parseFloat(v)});
+        }
+      });
+      data.push(newSeries);
+    }
+  })
+RadarChart.defaultConfig.radius = 3;
+RadarChart.defaultConfig.w = w;
+RadarChart.defaultConfig.h = h;
+RadarChart.draw("#chart-container", data);
+function animate(elem,time) {
+    if( !elem) return;
+    var to = elem.offsetTop;
+    var from = window.scrollY;
+    var start = new Date().getTime(),
+        timer = setInterval(function() {
+            var step = Math.min(1,(new Date().getTime()-start)/time);
+            window.scrollTo(0,(from+step*(to-from))+1);
+            if( step == 1){ clearInterval(timer);};
+        },25);
+        window.scrollTo(0,(from+1));
+    }
+
+var divVal = document.getElementById('chart-container');
+animate(divVal,600);
+}
+</script>
+
+
+<!-- <div id="chart-container"></div> -->
+<script type="text/javascript">
+   
+  </script>
+
+<script src="{{url_for('static',filename='radareastern.js')}}"></script>
+
+</body>
+</html>
