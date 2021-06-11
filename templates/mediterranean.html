@@ -2,9 +2,11 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
+<!-- -----Bootstrap---- -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
- 
-<!-- <link rel="stylesheet" href="style.css"> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 <!-- FLASK -- ****CHECK FOLDER STRUCTURE**** (static/style.css.....)> -->
 <link rel="stylesheet" href="{{url_for('static',filename = 'style.css')}}">
 <head>
@@ -31,10 +33,7 @@
     }
   </style>
 
-
   <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
-  <!-- <script type="text/javascript" src="radar2.js"></script> -->
-
 
   </head>
   <body>
@@ -45,22 +44,31 @@
 
 
     <div class="container div_position">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/map">Plan Your Holiday</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/comparison">Country Comparison</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Country Comparison
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/radareastern">Eastern Europe</a></li>
+                  <li><a class="dropdown-item" href="/mediterranean">Mediterranean</a></li>
+                  <li><a class="dropdown-item" href="/scandinavia">Scandinavia</a></li>
+                  <li><a class="dropdown-item" href="/westerneurope">Western Europe</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/bar">Bar Chart Comparison</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/statistic">Country Statistics</a>
@@ -68,17 +76,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="/aboutus">About Us</a>
               </li>
-              
             </ul>
           </div>
         </div>
       </nav>
-      </div>
-    
-    <!-- <p>This Data is  <strong>first row are the headers</strong> and the <strong>first column is the class names.</strong></p> -->
+    </div>
+
     <div id="chart-container" class="container div_position">
       <h3 style="padding: 20px;">Mediterranean Radar Graph</h3>
-      <p>The Radar Charts are a visual representation of comparable regions lifestyle data. The premise is simple, Pick a region, Click the button, Compare the data, choose a holiday country!</p>
+      <p>The Radar Charts are a visual representation of comparable regions lifestyle data. The premise is simple, Pick a region, <strong>Click</strong> the button, Compare the data, choose a holiday country!</p>
       <p>By visually representing the data as a radar chart it is possible to see how countries in specific regions stack up against each other. </p>
     </div>
 
@@ -159,8 +165,6 @@ animate(divVal,600);
 }
 </script>
 
-
-<!-- <div id="chart-container"></div> -->
 <script type="text/javascript">
    
   </script>

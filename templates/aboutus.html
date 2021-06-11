@@ -16,8 +16,12 @@
   
  <!-- Leaflet CSS -->
  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
  
+<!-- -----Bootstrap---- -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
   <!-- FLASK -- ****CHECK FOLDER STRUCTURE**** (static/style.css.....)> -->
   <link rel="stylesheet" href="{{url_for('static',filename = 'style.css')}}">
   <!-- <link ref="stylesheet" href="{{url_for('static',filename = 'd3Style.css')}}"> -->
@@ -33,34 +37,42 @@
 
 
   <div class="container div_position">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-    <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/map">Plan Your Holiday</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/comparison">Country Comparison</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/statistic">Country Statistic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/aboutus">About Us</a>
-          </li>
-          
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/map">Plan Your Holiday</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Country Comparison
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/radareastern">Eastern Europe</a></li>
+                <li><a class="dropdown-item" href="/mediterranean">Mediterranean</a></li>
+                <li><a class="dropdown-item" href="/scandinavia">Scandinavia</a></li>
+                <li><a class="dropdown-item" href="/westerneurope">Western Europe</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/bar">Bar Chart Comparison</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/statistic">Country Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutus">About Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   </div>
     
   <div class="container div_position">
@@ -115,17 +127,6 @@ crossorigin=""></script>
   <!-- D3 JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
   
-  <!-- Our JavaScript -->
-  <!-- <script type="text/javascript" src="Leaflet-Step-1/static/js/logic.js"></script> -->
-  <!-- <script type="text/javascript" src="Leaflet-Step-2/static/js/logic.js"></script> -->
-
-  <!-- Leaflet heatmap plugin-->
-  <!-- <script type="text/javascript" src="Leaflet-Step-1/static/js/leaflet-heat.js"></script> -->
-  
-  <!-- =======================OUR JS FILES============================= -->
-  
-
-
 </body>
 
 </html>

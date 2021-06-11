@@ -2,17 +2,27 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background:#e8edf0;
 }
 
+h1 {
+	font-size: 80px;
+  }
+  
+  h3 {
+	font-size: 30px;
+  }
+  
+
 .bar {
-  fill: orange;
+  fill: rgb(14, 207, 233);
 }
 
 .bar:hover {
-  fill: green;
+  fill: rgb(207, 102, 199);
 }
 .axis-text {
-  font-family: sans-serif;
+  font-family: sans-serif; 
   font-weight: bold;
   fill: #551aaf;
   text-anchor: middle;
