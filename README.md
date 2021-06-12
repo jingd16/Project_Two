@@ -1,5 +1,6 @@
 # Project_Two
 European City Holiday
+http://europeancityholiday.herokuapp.com/
 
 This team came together through the Monash University Data Analytics Bootcamp where we were tasked with developing a website that tells a story through interactive visualisations.
 
@@ -25,3 +26,12 @@ Then we finally got to tell the story! D3.js was used to plot all the charts and
 These visualisations were then put together on a website using HTML and CSS(bootstrap) to complete this final product.
 
 This has been an excellent team and we are very proud of what we have put together, we hope you enjoy it too!
+
+Data Source:
+Train - https://www.kaggle.com/headsortails/train-stations-in-europe
+Hotel Reviews - https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe
+Restaurant Reviews - https://www.kaggle.com/stefanoleone992/tripadvisor-european-restaurants
+European Countries - https://www.kaggle.com/roshansharma/europe-datasets
+World Cities - https://simplemaps.com/data/world-cities
+Best Place (Web Scraping) -https://www.roadaffair.com/best-places-to-visit-in-europe/
+
